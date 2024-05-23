@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.section{
+    width:100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.row{
+    width: 60%;
+    margin: auto;
+}
+.row .title{
+    text-align: center;
+    margin-top: 50px;
+}
+.row .title h1{
+    font-size: 45px;
+    color: #2f5d55;
+    letter-spacing: 1.5px;
+}
+.team-card{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.card{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.image-section img{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+.content{
+    width: 100%;
+    text-align: center;
+}
+.content h3{
+    font-size: 35px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color:#4aa9b5;
+}
+.content h4{
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+    color:#6a6a6a;
+    font-family: sans-serif;
+}
+.content p{
+    font-size: 15px;
+    margin: 16px 0px;
+    line-height: 1.5;
+    color:#6c6c6c;
+}
+.social{
+    margin-top: 20px;
+}
+.social a:hover{
+    color:#7d7d7d;
+    transition: 0.5s ease;
+}
+@media screen and (max-width: 900px){
+    .team-card{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .team-card{
+        grid-template-columns: 1fr;
+    }
+    .row .title h1{
+        font-size:35px;
+    }
+}
